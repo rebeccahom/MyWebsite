@@ -45,3 +45,10 @@ h1{
 	font-family: 'News Cycle', sans-serif;
 	font-size:4em;
 }
+
+#portfolioNav{
+	display:inline;
+	float:left;
+	margin-left:40%;
+	text-align: center;
+}
