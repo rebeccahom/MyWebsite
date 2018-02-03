@@ -1,4 +1,3 @@
-alert("Welcome! Just a heads up that this site is currently under construction so it may not be fully functional. Thanks for visiting!");
 $('document').ready(function(){
 	$("#content").hide();
 
