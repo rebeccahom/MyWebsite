@@ -1,35 +1,59 @@
+var shift = true;
+var contactShift = true;
 $('document').ready(function(){
-	$("#content").hide();
-
+	$("#aboutContent").hide();
+	$("#contactContent").hide();
 
 /*About Page*/
 	$("#about").on("click",function(){
+		//Ensure that the contact & about divs do not interfere with each other
+		$("#contactContent").hide();
+		$("#aboutContent").fadeToggle();
 		$("#description").hide();
+		if (shift === true){
+			$("#pushedHeader").animate({
+				marginTop: "-2em"
+			});
 
-		$("#pushedHeader").animate({margin:"-3em"});
-	})
+			shift = false;
 
-function showAbout(){
+		}
+
+		else if (shift === false){
+			$("#pushedHeader").animate({
+				marginTop: "2em"
+			});
+
+			$("#description").fadeIn("1000");
+			shift = true;	
+		}		
+		console.log("Reg: " + shift + " Contact: " + contactShift);
+	});
 	
-}
-
 /*Contact Page*/
 	$("#contact").on("click",function(){
-		$("#content").fadeIn(1000).empty(); //Ensure that the div is empty before adding content
-		$("#content").html("<h2>Email: rebecca.hom@nyu.edu</h2>"
-			+"<h2>Phone: (914) 217-0243</h2>");
+		$("#aboutContent").hide();
+		$("#contactContent").fadeToggle();
+		$("#description").hide();
+		if (contactShift === true){
+			$("#pushedHeader").animate({
+				marginTop: "-2em"
+			});
 
-		//Animation + styles
-		$("#content").css("background-color","rgba(240,248,255,0.9)");
-		$("#content").css("width","60%");
-		$("#content").css("height","400px");
-		$("#content").css("margin","13em auto");
-		$("#content").css("margin-bottom","0");
-		$("#content").css("padding","1%");
-		$("#content").css("text-align","center");
-		$("#regHeader").hide();
-		$("#pushedHeader").show();
-		$("#pushedHeader").animate({margin:"-3em"});
-	})
+			contactShift = false;
 
-})
+		}
+
+		else if (contactShift === false){
+			$("#pushedHeader").animate({
+				marginTop: "2em"
+			});
+
+			$("#description").fadeIn("1000");
+			contactShift = true;	
+		}
+		
+		
+		console.log("Reg: " + shift + " Contact: " + contactShift);
+	});	
+});	
