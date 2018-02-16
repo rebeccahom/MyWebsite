@@ -1,28 +1,34 @@
 body{
-	margin-top:100px;
+	margin:300px auto;
 	text-align: center;
-	width:100%;
+	width:100vw;
 	height:100vh;
 	overflow: hidden;
 	color:#f7f7f7;
 
 	background-image:url("BokehFinished.png");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center top;
 	background-size:100%;
 }
 
 #backgroundImage{
-	top:0;
-	left:0;
 	z-index:-1;
+	top:0;
 	position:fixed;
-	width:100%;
-	height:100%;
+	width:100vw;
+	height:100vh;
 	background-color:black;
 	opacity:0.5;
 }
 
+/*Style for the h1 tag*/
+#pushedHeader{
+	font-family: 'Montserrat', sans-serif;
+	font-size:4em;
+	color:#FFFFFF;
+	top:4em;
+}
 /*--------------- NAVIGATION BAR STYLES ----------------*/
 nav{
   background-color:#000000;
@@ -60,29 +66,51 @@ nav ul li a:hover{
 }
 /*------------END OF NAVIGATION BAR STYLES------------*/
 
-/*Style for the h1 tag*/
-#pushedHeader{
-	margin-top:300px;
-	font-family: 'Montserrat', sans-serif;
-	font-size:4em;
-	color:#FFFFFF;
-}
 
+/*--------------------- ABOUT DIV --------------------------*/
 #aboutContent{
-	background-color:rgba(0,0,0,0.3);
-	width:60%;
-	height:400px;
-	margin:13em auto;
-	margin-bottom:0;
-	padding:1%;
-	text-align:justify;
 	font-family: 'Varela Round', sans-serif;
+	background-color: rgba(0,0,0,0.5);
+	width:800px;
+	height:250px;
+	top:50%;
+	left:50%;
+	padding:1%;
+	text-align:left;
+	position:fixed;
+	transform: translate(-50%, -50%);
+}
+/*-------------------END OF ABOUT DIV ----------------------*/
+
+
+
+/*------------------- CONTACT DIV --------------------------*/
+#contactContent{
+	font-family: 'Varela Round', sans-serif;
+	background-color: rgba(0,0,0,0.5);
+	width:400px;
+	height:100px;
+	top:50%;
+	left:50%;
+	padding:1%;
+	position:fixed;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+	color:white;
 }
 
-/*Style for the About div*/
-ul{
-	text-decoration:none;
+#contactContent a{
+	text-decoration: none;
+	color:white;
 }
+
+#contactContent a:hover{
+	color:#C4C4C4;
+}
+/*-----------------END OF CONTACT DIV ----------------------*/
+
+
+
 /*-----------------PORTFOLIO PAGE STYLES--------------------*/
 #portfolioNav{
 	display:inline;
@@ -93,5 +121,8 @@ ul{
 
 #description{
 	font-family: 'Varela Round', sans-serif;
+	left:0;
+	right:0;
+	position:fixed;
 }
 /*-------------END OF PORTFOLIO PAGE STYLES--------------*/
