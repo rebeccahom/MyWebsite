@@ -1,26 +1,27 @@
 import * as React from 'react';
 import '../Styles/NavBar.css';
+import { Navbar, NavbarMenu, NavbarItem, NavbarStart, NavbarEnd } from 'bloomer';
 
 class NavBar extends React.Component {
     render() {
         return (
-            <div className="navbar">
-                <div className="navbar-menu">
-                    <div className="navbar-start">
-                        <a className="navbar-item" href="/">HOME</a>
-                        <a className="navbar-item" href="/about">ABOUT</a>
-                        <a className="navbar-item" href="#" >PORTFOLIO</a>
-                    </div>
-                    <div className="navbar-end">
-                        <a className="navbar-item navbarIcon" href="https://github.com/rebeccahom">
+            <Navbar>
+                <NavbarMenu>
+                    <NavbarStart>
+                        <NavbarItem href="/">HOME</NavbarItem>
+                        <NavbarItem href="/about">ABOUT</NavbarItem>
+                        <NavbarItem href="#">PROJECTS</NavbarItem>
+                    </NavbarStart>
+                    <NavbarEnd>
+                        <NavbarItem href="https://github.com/rebeccahom" className="navbar-item navbarIcon">
                             <img src={require('../images/githubIcon.png')}/>
-                        </a>
-                        <a className="navbar-item navbarIcon" href="https://www.linkedin.com/in/rebecca-hom-683a00102">
+                        </NavbarItem>
+                        <NavbarItem href="https://www.linkedin.com/in/rebecca-hom-683a00102" className="navbar-item navbarIcon">
                             <img src={require('../images/linkedInIcon.png')}/>
-                        </a>
-                    </div>
-                </div >
-            </div>
+                        </NavbarItem>
+                    </NavbarEnd>
+                </NavbarMenu>
+            </Navbar>
         );
     }
 }
