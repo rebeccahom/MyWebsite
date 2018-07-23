@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../Styles/Headline.css';
 
-class ContactContent extends React.Component {
+class Headline extends React.Component {
     render() {
         return (
             <div className="center">
@@ -12,4 +12,4 @@ class ContactContent extends React.Component {
     }
 }
 
-export default ContactContent;
+export default Headline;
