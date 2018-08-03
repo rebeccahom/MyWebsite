@@ -1,6 +1,9 @@
 body {
-    background-image:url("BokehFinished.png");
+	background-color: #f4c842;
+	/*
+    background-image:url("../images/BokehFinished.png");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size:100%;
+	*/
 }

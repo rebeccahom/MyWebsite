@@ -3,7 +3,7 @@
     position:absolute;
     top:0;
     left:0;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela', sans-serif;
 }
   
 .navbar-menu {
@@ -22,13 +22,13 @@
 .navbar-item {
     font-size:2em;
     padding:1%;
-    color:#8c9293;
+    color:#725c16;
     text-decoration: none;
 }
   
 .navbar-item:hover {
     color:#FFFFFF;
-    transition:0.25s;  
+    transition:0.5s;  
 }
 
 .navbarIcon img{
