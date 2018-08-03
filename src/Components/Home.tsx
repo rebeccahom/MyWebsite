@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import About from './AboutContent';
 import Contact from './ContactContent';
 import Headline from './Headline';
+import Footer from './Footer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../Styles/Home.css';
 
@@ -18,6 +19,7 @@ class Home extends React.Component {
                         <Route path='/' component={Headline} />
                     </Switch>
                 </BrowserRouter>
+                <Footer />
             </div>
         );
     }

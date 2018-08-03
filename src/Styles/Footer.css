@@ -1,0 +1,10 @@
+#sticky {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Varela', sans-serif;
+}
