@@ -1,11 +1,22 @@
 import * as React from 'react';
+import Education from './AboutComponents/Education';
 import '../Styles/About.css';
 
 class AboutContent extends React.Component {
     render() {
         return (
+            <div>
+                <Education />
+            </div>
+        );
+    }
+}
+
+export default AboutContent;
+
+/*
             <div className="aboutContent">
-                <p>I am currently a senior at NYU in the College of Arts and Science majoring
+                <p>I'm a senior at NYU in the College of Arts and Science majoring
                     in Computer Science and minoring in Web Programming and Applications.
                     Here is my coding experience: </p>
                 <ul>
@@ -21,8 +32,4 @@ class AboutContent extends React.Component {
                     my coding projects.</p>
                 <p>If you would like to see my resume, please inquire via my Contact page. Thank you!</p>
             </div>
-        );
-    }
-}
-
-export default AboutContent;
+*/
