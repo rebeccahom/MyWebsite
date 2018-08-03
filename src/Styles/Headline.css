@@ -1,11 +1,30 @@
+@keyframes fadeInText {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .center {
     text-align: center;
     margin-top:40vh;
     font-family: 'Montserrat', sans-serif;
-    color:#f7f7f7;
+    color:#725c16;
+}
+
+.center:hover {
+    color:#FFFFFF;
+    transition:0.5s; 
 }
 
 h1 {
     font-size:4em;
     top:4em;
+}
+
+#fadeIn {
+    opacity: 0;
+    animation-name:fadeInText;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }

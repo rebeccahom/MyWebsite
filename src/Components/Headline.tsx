@@ -7,6 +7,7 @@ class Headline extends React.Component {
             <div className="center">
                 <h1>Hi, I'm Rebecca.</h1>
                 <h3>Student // Programmer // Designer</h3>
+                <p id="fadeIn">Click on one of the links above to get started.</p>
             </div>
         );
     }
