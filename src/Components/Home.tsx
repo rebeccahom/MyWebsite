@@ -11,6 +11,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
+                <div className='pushFooter'>
                 <NavBar />
                 <BrowserRouter>
                     <Switch>
@@ -19,6 +20,7 @@ class Home extends React.Component {
                         <Route path='/' component={Headline} />
                     </Switch>
                 </BrowserRouter>
+                </div>
                 <Footer />
             </div>
         );
