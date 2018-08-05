@@ -8,21 +8,21 @@ class Education extends React.Component {
             <div className='header'>
             <h2>Education</h2>
             <Columns className='fixFlow'>
-                <Column className='centered'>
+                <Column className='columnItem'>
                     <div>
                         <img src={require('../../images/tempIcon.png')}/>
                         <h3>NYU</h3>
                     </div>
                 </Column>
 
-                <Column className='centered'>
+                <Column className='columnItem'>
                     <img src={require('../../images/tempIcon.png')}/>
-                    <h3>Major: Computer Science</h3>
+                    <h3>Major:</h3><p>Computer Science</p>
                 </Column>
 
-                <Column className='centered'>
+                <Column className='columnItem'>
                     <img src={require('../../images/tempIcon.png')}/>
-                    <h3>Minor: Web Design & Applications</h3>
+                    <h3>Minor:</h3><p>Web Design & Applications</p>
                 </Column>
             </Columns>
             </div>
