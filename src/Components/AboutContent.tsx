@@ -1,6 +1,9 @@
 import * as React from 'react';
 import Education from './AboutComponents/Education';
 import Languages from './AboutComponents/Languages';
+import IDEs from './AboutComponents/IDEs';
+import Other from './AboutComponents/Other';
+import Hobbies from './AboutComponents/Hobbies';
 import '../Styles/About.css';
 
 class AboutContent extends React.Component {
@@ -9,6 +12,9 @@ class AboutContent extends React.Component {
             <div>
                 <Education />
                 <Languages />
+                <IDEs />
+                <Other />
+                <Hobbies />
             </div>
         );
     }
