@@ -9,3 +9,23 @@
     transform: translate(-50%, -50%);
     color:#f7f7f7;
 }
+
+.fixFlow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    width: 80vw;
+}
+
+.centered {
+    text-align: center;
+    width:30%;
+}
+
+.header {
+    text-align: center;
+    margin-top:10%;
+}

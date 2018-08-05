@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { Columns, Column } from 'bloomer';
-import '../../Styles/Education.css';
+import '../../Styles/About.css';
 
 class Education extends React.Component {
     render() {
         return (
-            <Columns isCentered className='fixFlow'>
+            <div className='header'>
+            <h2>Education</h2>
+            <Columns className='fixFlow'>
                 <Column className='centered'>
                     <div>
                         <img src={require('../../images/tempIcon.png')}/>
@@ -23,6 +25,7 @@ class Education extends React.Component {
                     <h3>Minor: Web Design & Applications</h3>
                 </Column>
             </Columns>
+            </div>
         );
     }
 }
