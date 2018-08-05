@@ -20,7 +20,7 @@
     width: 80vw;
 }
 
-.centered {
+.columnItem {
     text-align: center;
     width:30%;
 }
@@ -28,4 +28,8 @@
 .header {
     text-align: center;
     margin-top:10%;
+}
+
+.centered {
+    text-align: center;
 }

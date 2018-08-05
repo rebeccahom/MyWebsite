@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Education from './AboutComponents/Education';
+import Languages from './AboutComponents/Languages';
 import '../Styles/About.css';
 
 class AboutContent extends React.Component {
@@ -7,6 +8,7 @@ class AboutContent extends React.Component {
         return (
             <div>
                 <Education />
+                <Languages />
             </div>
         );
     }
