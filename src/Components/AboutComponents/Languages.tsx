@@ -6,8 +6,8 @@ class Languages extends React.Component {
     render() {
         return (
             <div className='centered'>
-                <h2>Languages</h2>
-                <h4>PROFICIENT</h4>
+                <h2 className='titleStyle'>Languages</h2>
+                <h4 className='smallerTitle'>PROFICIENT</h4>
                 {/*FIRST ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
@@ -75,7 +75,7 @@ class Languages extends React.Component {
                     <Column className='columnItem'/>
                 </Columns>
 
-                <h4>FAMILIAR WITH</h4>
+                <h4 className='smallerTitle'>FAMILIAR WITH</h4>
                 {/*FOURTH ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>

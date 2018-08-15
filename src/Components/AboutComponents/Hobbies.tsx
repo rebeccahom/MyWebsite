@@ -6,7 +6,7 @@ class Hobbies extends React.Component {
     render() {
         return (
             <div className='centered'>
-                <h2>Hobbies</h2>
+                <h2 className='titleStyle'>Hobbies</h2>
                 {/*FIRST ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>

@@ -6,7 +6,7 @@ class Education extends React.Component {
     render() {
         return (
             <div className='header'>
-            <h2>Education</h2>
+            <h2 className='titleStyle'>Education</h2>
             <Columns className='fixFlow'>
                 <Column className='columnItem'>
                     <div>

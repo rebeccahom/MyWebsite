@@ -6,7 +6,7 @@ class IDEs extends React.Component {
     render() {
         return (
             <div className='centered'>
-                <h2>IDEs</h2>
+                <h2 className='titleStyle'>IDEs</h2>
                 {/*FIRST ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
