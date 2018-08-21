@@ -50,7 +50,7 @@ class Other extends React.Component {
                     <Column className='columnItem'>
                         <div>
                             <img src={require('../../images/tempIcon.png')}/>
-                            <h3>Windows 10</h3>
+                            <h3>Postman</h3>
                         </div>
                     </Column>
                 </Columns>
@@ -64,7 +64,12 @@ class Other extends React.Component {
                         </div>
                     </Column>
 
-                    <Column className='columnItem'/>
+                    <Column className='columnItem'>
+                        <div>
+                            <img src={require('../../images/tempIcon.png')}/>
+                            <h3>Windows 10</h3>
+                        </div>
+                    </Column>
 
                     <Column className='columnItem'/>
                 </Columns>
