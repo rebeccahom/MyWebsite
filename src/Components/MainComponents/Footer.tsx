@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Column, Columns, Container, Content, Footer } from 'bloomer';
-import '../Styles/Footer.css';
+import '../../Styles/Footer.css';
 
 class FooterComponent extends React.Component {
     render() {
