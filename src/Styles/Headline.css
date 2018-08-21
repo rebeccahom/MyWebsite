@@ -1,4 +1,9 @@
-@keyframes fadeInText {
+@keyframes fadeInSmallText {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeInBigText {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -20,11 +25,19 @@ h1 {
     top:4em;
 }
 
-#fadeIn {
+#smallTitleFadeIn {
     opacity: 0;
-    animation-name:fadeInText;
+    animation-name: fadeInSmallText;
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+}
+
+#bigTitleFadeIn {
+    opacity: 0;
+    animation-name: fadeInBigText;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
