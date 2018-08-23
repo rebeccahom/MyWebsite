@@ -13,6 +13,11 @@
     width:30%;
 }
 
+.columnItem img {
+    width: 100px;
+    height: 125px;
+}
+
 .header {
     text-align: center;
     margin-top:10%;

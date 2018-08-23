@@ -12,21 +12,21 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/JavaLogo.png')}/>
                             <h3>Java</h3>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/JavaScriptLogo.png')}/>
                             <h3>JavaScript</h3><p>(ECMAScript 6)</p>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/React.png')}/>
                             <h3>React</h3>
                         </div>
                     </Column>
@@ -36,21 +36,21 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/redux.png')}/>
                             <h3>Redux</h3>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/TypeScriptLogo.png')}/>
                             <h3>TypeScript</h3>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/HtmlLogo.png')}/>
                             <h3>HTML5</h3>
                         </div>
                     </Column>
@@ -60,14 +60,14 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/CSSLogo.png')}/>
                             <h3>CSS3</h3>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/processing.png')}/>
                             <h3>Processing</h3>
                         </div>
                     </Column>
@@ -80,21 +80,21 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/python.png')}/>
                             <h3>Python</h3>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/jQueryLogo.png')}/>
                             <h3>jQuery</h3>
                         </div>
                     </Column>
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/PHPLogo.png')}/>
                             <h3>PHP</h3>
                         </div>
                     </Column>
@@ -104,7 +104,7 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/tempIcon.png')}/>
+                            <img src={require('../../images/sql.png')}/>
                             <h3>MySQL</h3>
                         </div>
                     </Column>
