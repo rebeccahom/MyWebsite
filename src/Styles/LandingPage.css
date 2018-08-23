@@ -1,0 +1,44 @@
+.landingFixFlow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    width: 80vw;
+    height: 50vh;
+}
+
+.buttonStyle {
+    background-color: #ffe599;
+    color: #725c16;
+    position: relative;
+    border: none;
+    width:15vw;
+    height:13vh;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    transition: width 1s, left 1s, top 1s;
+}
+
+.buttonShadow {
+    background-color: #d8b756;
+    position: absolute;
+    top: -0.25vh;
+    left: -0.1vw;
+    width:105%;
+    height:112%;
+    z-index:-1;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.buttonStyle:hover > div{
+    width: 102%;
+    height:107%;
+}
+
+.buttonStyle:hover {
+    left: 0.5vh;
+    top: 0.5vh;
+}
