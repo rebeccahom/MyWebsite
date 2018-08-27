@@ -4,7 +4,6 @@ import Languages from './Languages';
 import IDEs from './IDEs';
 import Other from './Other';
 import Hobbies from './Hobbies';
-import '../../Styles/About.css';
 
 class AboutContent extends React.Component {
     render() {
