@@ -4,6 +4,7 @@ import About from './AboutComponents/AboutMain';
 import Headline from './MainComponents/Headline';
 import Footer from './MainComponents/Footer';
 import Portfolio from './ProjectComponents/LandingPage';
+import Art from './ProjectComponents/Art';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../Styles/Home.css';
 
@@ -16,6 +17,7 @@ class Home extends React.Component {
                 <BrowserRouter>
                     <Switch>
                         <Route path='/about' component={About} />
+                        <Route path='/portfolio/art' component={Art}/>
                         <Route path='/portfolio' component={Portfolio} />
                         <Route path='/' component={Headline} />
                     </Switch>
