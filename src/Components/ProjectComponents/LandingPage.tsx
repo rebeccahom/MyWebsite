@@ -8,12 +8,12 @@ class LandingPage extends React.Component {
             <div>
                 <Columns className='landingFixFlow'>
                     <Column isSize="1/2" hasTextAlign="centered">
-                        <Button className='buttonStyle'> ART
+                        <Button className='buttonStyle' href='portfolio/art'>ART
                         <div className='buttonShadow'/>
                         </Button>
                     </Column>
                     <Column isSize="1/2" hasTextAlign="centered">
-                        <Button className='buttonStyle'>PROJECTS
+                        <Button className='buttonStyle' href='/portfolio/projects'>PROJECTS
                         <div className='buttonShadow'/>
                         </Button>
                     </Column>
