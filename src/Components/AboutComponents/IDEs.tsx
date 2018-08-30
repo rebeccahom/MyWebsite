@@ -25,7 +25,7 @@ class IDEs extends React.Component {
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/SublimeLogo.png')}/>
+                            <img src={require('../../images/SublimeLogo.png')} style={{width: '130px'}}/>
                             <h3>Sublime</h3>
                         </div>
                     </Column>

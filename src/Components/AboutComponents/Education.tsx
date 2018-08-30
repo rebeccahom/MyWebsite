@@ -10,18 +10,18 @@ class Education extends React.Component {
             <Columns className='fixFlow'>
                 <Column className='columnItem'>
                     <div>
-                        <img src={require('../../images/NYULogo.jpg')}/>
+                        <img src={require('../../images/NYULogo.jpg')} style={{height: '100px'}}/>
                         <h3>New York University</h3>
                     </div>
                 </Column>
 
                 <Column className='columnItem'>
-                    <img src={require('../../images/tempIcon.png')}/>
+                    <img src={require('../../images/ComputerIcon.png')} style={{width: '110px', height: '110px'}}/>
                     <h3>Major:</h3><p>Computer Science</p>
                 </Column>
 
                 <Column className='columnItem'>
-                    <img src={require('../../images/tempIcon.png')}/>
+                    <img src={require('../../images/WebDesign.png')}/>
                     <h3>Minor:</h3><p>Web Design & Applications</p>
                 </Column>
             </Columns>

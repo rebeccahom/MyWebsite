@@ -12,7 +12,7 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/JavaLogo.png')}/>
+                            <img src={require('../../images/JavaLogo.png')} style={{width: '90px'}}/>
                             <h3>Java</h3>
                         </div>
                     </Column>
@@ -26,7 +26,7 @@ class Languages extends React.Component {
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/React.png')}/>
+                            <img src={require('../../images/React.png')} style={{width: '130px'}}/>
                             <h3>React</h3>
                         </div>
                     </Column>
@@ -94,7 +94,7 @@ class Languages extends React.Component {
 
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/PHPLogo.png')}/>
+                            <img src={require('../../images/PHPLogo.png')} style={{width: '130px'}}/>
                             <h3>PHP</h3>
                         </div>
                     </Column>
@@ -104,7 +104,7 @@ class Languages extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/sql.png')}/>
+                            <img src={require('../../images/sql.png')} style={{width: '130px'}}/>
                             <h3>MySQL</h3>
                         </div>
                     </Column>

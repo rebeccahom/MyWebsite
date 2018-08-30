@@ -11,7 +11,7 @@ class Other extends React.Component {
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
-                            <img src={require('../../images/GitLogo.png')}/>
+                            <img src={require('../../images/GitLogo.png')} style={{width: '160px'}}/>
                             <h3>Git</h3>
                         </div>
                     </Column>
