@@ -1,18 +1,16 @@
 import * as React from 'react';
 import '../../Styles/Headline.css';
-import Landscape from './Landscape';
 
 class Headline extends React.Component {
     render() {
         return (
-            <div>
-                <div className="center" id="bigTitleFadeIn">
-                    <h1>Hi, I'm Rebecca.</h1>
-                    <h3>Student // Programmer // Designer</h3>
-                    <p id="smallTitleFadeIn">Click on one of the links above to get started.</p>
-                    <div id="heart"/>
-                </div>
-                <Landscape/>
+            <div className="center" id="bigTitleFadeIn">
+                <h1>Hi, I'm Rebecca.</h1>
+                <h3>Student // Programmer // Designer</h3>
+                <p className="smallTitleFadeIn">Click on one of the links above to get started.</p>
+                <p className="smallTitleFadeIn">(Site is still under construction, but feel free to take a look around!)</p>
+                {/*I'm trying my best to get it done I'm sorry :( */}
+                <div id="heart"/>
             </div>
         );
     }
