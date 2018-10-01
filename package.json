@@ -19,7 +19,8 @@
     "eject": "react-scripts-ts eject",
     "css": "tcm src/Components/Styles",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "tslint --project tsconfig.json"
   },
   "devDependencies": {
     "@types/jest": "^23.3.0",
