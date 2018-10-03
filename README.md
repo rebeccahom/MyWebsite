@@ -13,3 +13,8 @@ Rebecca Hom
 1. Download or clone the repo
 2. Install dependencies via `npm install`
 3. Run via `npm start`
+
+# Known Issues
+* Unnecessary scrolling
+* Background doesn't work with other pages
+* Update UI/UX for About and Portfolio pages
