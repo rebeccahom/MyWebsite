@@ -1,13 +1,8 @@
-body {
-	background-color: #f4c842;
-	/*
-    background-image:url("../images/BokehFinished.png");
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size:100%;
-	*/
-}
-
-.pushFooter {
-	padding-bottom: 10%;
+#backgroundSketch {
+	position: fixed;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	height:100%;
+	z-index: -10;
 }

@@ -7,22 +7,22 @@ import Portfolio from './ProjectComponents/LandingPage';
 import Art from './ProjectComponents/Art';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../Styles/Home.css';
+import Background from './MainComponents/BackgroundP5Wrapper';
 
 class Home extends React.Component {
     render() {
         return (
             <div>
-                <div className='pushFooter'>
-                <NavBar />
-                <BrowserRouter>
-                    <Switch>
-                        <Route path='/about' component={About} />
-                        <Route path='/portfolio/art' component={Art}/>
-                        <Route path='/portfolio' component={Portfolio} />
-                        <Route path='/' component={Headline} />
-                    </Switch>
-                </BrowserRouter>
-                </div>
+                <Background/>
+                    <NavBar />
+                    <BrowserRouter>
+                        <Switch>
+                            <Route path='/about' component={About} />
+                            <Route path='/portfolio/art' component={Art}/>
+                            <Route path='/portfolio' component={Portfolio} />
+                            <Route path='/' component={Headline} />
+                        </Switch>
+                    </BrowserRouter>
                 <Footer />
             </div>
         );

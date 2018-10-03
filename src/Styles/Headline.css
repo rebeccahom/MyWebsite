@@ -14,17 +14,14 @@
 }
 
 .center {
+    width:100%;
     text-align: center;
-    margin: auto;
-    margin-top:40vh;
+    margin: 0 auto;
+    margin-top:25vh;
     font-family: 'Montserrat', sans-serif;
     color:#725c16;
-    width: 30%;
-}
-
-.center:hover {
-    color:#FFFFFF;
-    transition:0.5s; 
+    position: fixed;
+    z-index: 1;
 }
 
 h1 {
@@ -47,6 +44,7 @@ h1 {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+
 }
 
 
