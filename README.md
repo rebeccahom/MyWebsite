@@ -12,7 +12,7 @@ Rebecca Hom
 # Run locally
 1. Download or clone the repo
 2. Install dependencies via `npm install`
-3. Run via `npm start`
+3. Run via `npm run start`
 
 # Known Issues
 * Unnecessary scrolling
