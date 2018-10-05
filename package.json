@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/react-router-dom": "^4.2.7",
     "ajv-keywords": "^3.2.0",
+    "aos": "^2.3.3",
     "bloomer": "^0.6.3",
     "bulma": "^0.7.1",
     "npm": "^6.4.1",
