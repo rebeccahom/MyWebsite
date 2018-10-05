@@ -23,12 +23,12 @@
 .navbar-item {
     font-size:2em;
     padding:1%;
-    color:#725c16;
+    color: #6d6e72;
     text-decoration: none;
 }
   
 .navbar-item:hover {
-    color:#FFFFFF;
+    color:#c1c5cc;
     transition:0.5s;  
 }
 
