@@ -13,6 +13,10 @@
     to {transform: scale(0.6);}
 }
 
+h1 {
+    font-size:4em;
+    top:4em;
+}
 .center {
     width:100%;
     text-align: center;
@@ -20,13 +24,8 @@
     margin-top:25vh;
     font-family: 'Montserrat', sans-serif;
     color:#725c16;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-}
-
-h1 {
-    font-size:4em;
-    top:4em;
 }
 
 .smallTitleFadeIn {
@@ -44,7 +43,6 @@ h1 {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-
 }
 
 

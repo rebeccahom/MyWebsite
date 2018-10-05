@@ -15,6 +15,10 @@ Rebecca Hom
 3. Run via `npm run start`
 
 # Known Issues
-* Unnecessary scrolling
 * Background doesn't work with other pages
 * Update UI/UX for About and Portfolio pages
+
+# Bug Tracker
+* Page had unnecessary scroll bars
+    * Problem: Home page had scroll bars horizontally and vertically, although no extra content was being shown/hidden
+    * Solution: Inspected page and fixed P5 canvas + height

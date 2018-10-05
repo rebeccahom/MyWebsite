@@ -13,12 +13,14 @@ export default function background(p) {
       this.x3 = this.x2 + p.random(-50, 50);
       this.y3 = this.y2 + p.random(-50, 50);
   
-      this.r = p.random(0, 150);
-      this.g = p.random(0, 150);
-      this.b = p.random(0, 150);
+      this.r = p.random(0, 255);
+      this.g = p.random(0, 255);
+      this.b = p.random(0, 255);
   
       this.floatX = p.random(-0.5, 0.5);
       this.floatY = p.random(-0.5, 0.5);
+
+      this.color = p.random(0, 255);
     }
   
     display() {
@@ -47,7 +49,7 @@ export default function background(p) {
 
   p.setup = function() {
     //Initialize the canvas
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(p.windowWidth, p.windowHeight * .95);
 
     for (var i = 0; i < 250; i++) {
       var tempTriangle = new FloatyTriangle();
