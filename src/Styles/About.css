@@ -1,37 +1,47 @@
-.fixFlow {
+/*Overall div containing the circles*/
+#showCircles {
+    position: absolute;
+    margin-top: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Control the flow of the circles within the div with Flexbox*/
+.flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    text-align: center;
-    margin: auto;
-    width: 80vw;
+    align-items: center;
+    width: 100%;
+    padding-top: 5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
 }
 
-.columnItem {
-    text-align: center;
-    width:30%;
-}
-
-.columnItem img {
-    width: 100px;
-    height: 125px;
-}
-
-.header {
-    text-align: center;
-    margin-top:10%;
-}
-
-.centered {
+/*Style for each individual circle; shape taken from CSS Tricks*/
+.circle {
+    width: 150px;
+	height: 150px;
+	background: red;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+    border-radius: 75px;
     text-align: center;
 }
 
-.titleStyle {
-    font-family: 'Work Sans', sans-serif;
+/*Center the label in the circle*/
+.centerCircleLabel {
+    margin-top: 65px;
 }
 
-.smallerTitle {
-    font-family: 'Work Sans', sans-serif;
-    font-style: italic;
+/*---------------EDUCATION---------------*/
+#Education {
+    margin-top: 10%;
+    padding: 2% 10% 2% 10%;
+}
+
+.captionFix {
+    float: left;
+    margin-right: 4%;
 }
