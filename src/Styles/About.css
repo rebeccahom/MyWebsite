@@ -52,7 +52,7 @@
 }
 
 /*Circle bounce animation*/
-.bounceAnimation {
+.bounceAnimation:hover {
     animation-name: bounce;
     animation-timing-function: linear;
     animation-duration: 2s;
