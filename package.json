@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
     "@types/react-router-dom": "^4.2.7",
     "ajv-keywords": "^3.2.0",
-    "aos": "^2.3.3",
     "bloomer": "^0.6.3",
     "bulma": "^0.7.1",
     "npm": "^6.4.1",
     "p5": "^0.7.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts-ts": "2.16.0",
+    "redux": "^4.0.0",
+    "typescript": "^2.9.2",
     "url-parse": "^1.4.3"
   },
   "scripts": {
@@ -28,11 +33,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.0",
-    "@types/node": "^10.5.2",
-    "@types/react": "^16.4.6",
-    "@types/react-dom": "^16.0.6",
-    "gh-pages": "^1.2.0",
-    "typescript": "^2.9.2"
+    "gh-pages": "^1.2.0"
   },
   "homepage": "https://rebeccahom.github.io"
 }
