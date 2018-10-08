@@ -5,9 +5,24 @@ import Languages from './Languages';
 import IDEs from './IDEs';
 import Other from './Other';
 import Hobbies from './Hobbies';*/
+import {Tab, Tabs, TabList, TabLink} from 'bloomer';
 
-class AboutContent extends React.Component {
-    render() {
+export interface IAboutMainStateProps {
+    showingBubbles: boolean;
+}
+
+export interface IAboutMainDispatchProps {
+    showBubbles: () => void;
+    hideBubbles: () => void;
+}
+
+export type IAboutMainProps = IAboutMainStateProps & IAboutMainDispatchProps;
+class AboutContent extends React.Component<IAboutMainProps> {
+    constructor(props: IAboutMainProps) {
+        super(props);
+    }
+
+    generateBubbles() {
         return (
             <div id='showCircles'>
                 <div className='flex'>
@@ -24,6 +39,26 @@ class AboutContent extends React.Component {
                     <div className='circle bounceAnimation' style={{backgroundColor: "#bfead3"}}>
                         <p className='centerCircleLabel'>HOBBIES</p></div>
                 </div>
+            </div>);
+    }
+
+    generateTabs() {
+        return (
+        <Tabs isAlign='left' isSize='medium' isBoxed={true} isToggle={true}>
+            <TabList isAlign='left'>
+                <Tab><TabLink>Education</TabLink></Tab>
+                <Tab><TabLink>Languages</TabLink></Tab>
+                <Tab><TabLink>IDEs</TabLink></Tab>
+                <Tab><TabLink>Other</TabLink></Tab>
+                <Tab><TabLink>Hobbies</TabLink></Tab>
+            </TabList>
+        </Tabs>);
+    }
+
+    render() {
+        return (
+            <div>
+                {this.generateBubbles()}
             </div>
         );
     }
