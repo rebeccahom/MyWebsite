@@ -1,5 +1,5 @@
+/*
 import * as React from 'react';
-import { Columns, Column } from 'bloomer';
 import '../../Styles/About.css';
 
 class Other extends React.Component {
@@ -7,7 +7,6 @@ class Other extends React.Component {
         return (
             <div className='centered'>
                 <h2>Other</h2>
-                {/*FIRST ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -30,8 +29,6 @@ class Other extends React.Component {
                         </div>
                     </Column>
                 </Columns>
-
-                {/*SECOND ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -55,7 +52,6 @@ class Other extends React.Component {
                     </Column>
                 </Columns>
 
-                {/*THIRD ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -80,3 +76,4 @@ class Other extends React.Component {
 }
 
 export default Other;
+*/

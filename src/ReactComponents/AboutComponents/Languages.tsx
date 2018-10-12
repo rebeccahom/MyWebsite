@@ -1,5 +1,5 @@
+/*
 import * as React from 'react';
-import { Columns, Column } from 'bloomer';
 import '../../Styles/About.css';
 
 class Languages extends React.Component {
@@ -8,7 +8,6 @@ class Languages extends React.Component {
             <div className='centered'>
                 <h2 className='titleStyle'>Languages</h2>
                 <h4 className='smallerTitle'>PROFICIENT</h4>
-                {/*FIRST ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -32,7 +31,6 @@ class Languages extends React.Component {
                     </Column>
                 </Columns>
 
-                {/*SECOND ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -56,7 +54,6 @@ class Languages extends React.Component {
                     </Column>
                 </Columns>
 
-                {/*THIRD ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -76,7 +73,6 @@ class Languages extends React.Component {
                 </Columns>
 
                 <h4 className='smallerTitle'>FAMILIAR WITH</h4>
-                {/*FOURTH ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -100,7 +96,6 @@ class Languages extends React.Component {
                     </Column>
                 </Columns>
 
-                {/*FIFTH ROW*/}
                 <Columns className='fixFlow'>
                     <Column className='columnItem'>
                         <div>
@@ -119,3 +114,4 @@ class Languages extends React.Component {
 }
 
 export default Languages;
+*/

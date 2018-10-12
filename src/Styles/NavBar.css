@@ -11,20 +11,13 @@
     list-style-type: none;
     margin-top:1%;
 }
- 
-.navbar-start {
-    display:inline;
-}
-
-.navbar-end {
-    display:inline;
-}
 
 .navbar-item {
     font-size:2em;
     padding:1%;
     color: #6d6e72;
     text-decoration: none;
+    float: left;
 }
   
 .navbar-item:hover {

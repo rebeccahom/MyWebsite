@@ -1,11 +1,5 @@
 import * as React from 'react';
 import '../../Styles/About.css';
-/*import Education from './Education';
-import Languages from './Languages';
-import IDEs from './IDEs';
-import Other from './Other';
-import Hobbies from './Hobbies';*/
-import {Tab, Tabs, TabList, TabLink} from 'bloomer';
 
 export interface IAboutMainStateProps {
     showingBubbles: boolean;
@@ -40,19 +34,6 @@ class AboutContent extends React.Component<IAboutMainProps> {
                         <p className='centerCircleLabel'>HOBBIES</p></div>
                 </div>
             </div>);
-    }
-
-    generateTabs() {
-        return (
-        <Tabs isAlign='left' isSize='medium' isBoxed={true} isToggle={true}>
-            <TabList isAlign='left'>
-                <Tab><TabLink>Education</TabLink></Tab>
-                <Tab><TabLink>Languages</TabLink></Tab>
-                <Tab><TabLink>IDEs</TabLink></Tab>
-                <Tab><TabLink>Other</TabLink></Tab>
-                <Tab><TabLink>Hobbies</TabLink></Tab>
-            </TabList>
-        </Tabs>);
     }
 
     render() {
