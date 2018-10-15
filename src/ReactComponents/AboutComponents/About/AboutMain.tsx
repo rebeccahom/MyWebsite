@@ -1,8 +1,8 @@
 import * as React from 'react';
-import '../../Styles/About.css';
+import '../../../Styles/About.css';
 
 export interface IAboutMainStateProps {
-    showingBubbles: boolean;
+    isShowingBubbles: boolean;
 }
 
 export interface IAboutMainDispatchProps {
@@ -11,14 +11,14 @@ export interface IAboutMainDispatchProps {
 }
 
 export type IAboutMainProps = IAboutMainStateProps & IAboutMainDispatchProps;
-class AboutContent extends React.Component<IAboutMainProps> {
+class AboutMain extends React.Component<IAboutMainProps> {
     constructor(props: IAboutMainProps) {
         super(props);
     }
 
     generateBubbles() {
         return (
-            <div id='showCircles'>
+            <div>
                 <div className='flex'>
                     <div className='circle bounceAnimation' style={{backgroundColor: "#f48a78"}}>
                         <p className='centerCircleLabel'>EDUCATION</p></div>
@@ -38,11 +38,11 @@ class AboutContent extends React.Component<IAboutMainProps> {
 
     render() {
         return (
-            <div>
-                {this.generateBubbles()}
+            <div id='showCircles'>
+                {this.props.isShowingBubbles ? this.generateBubbles() : <div/>}
             </div>
         );
     }
 }
 
-export default AboutContent;
+export default AboutMain;
