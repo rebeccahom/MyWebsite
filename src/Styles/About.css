@@ -3,8 +3,8 @@
     to {opacity:0.5;}
 }
 
-/*Overall div containing the circles*/
-#showCircles {
+/*Overall div containing the circles and other components*/
+#aboutStyle {
     position: absolute;
     margin-top: 5%;
     width: 100%;
@@ -28,7 +28,6 @@
 .circle {
     width: 150px;
 	height: 150px;
-	background: red;
 	-moz-border-radius: 75px;
 	-webkit-border-radius: 75px;
     border-radius: 75px;
@@ -45,6 +44,42 @@
     margin-top: 65px;
 }
 
+/*Styles for tabs*/
+#tabStyle {
+    margin-top: 3%;
+    width: 100%;
+}
+#tabs {
+    width: 50%;
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#tabs li {
+    float: left;
+    padding: 2% 5% 2% 4%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 10%;
+}
+#tabs li:hover{
+    border-bottom: 3px solid #89ff9d;
+}
+
+#tabs li:first-of-type {
+    border-top-left-radius: 25px
+}
+
+#tabs li:last-of-type {
+    border-top-right-radius: 25px
+}
+
+#tabs li:active {
+    background-color: #3b493e;
+    color: white;
+}
 /*---------------EDUCATION---------------*/
 #Education {
     margin-top: 10%;

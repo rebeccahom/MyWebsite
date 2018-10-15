@@ -13,3 +13,12 @@ export const BubbleReducer: Reducer<boolean> = (state: boolean = initialState.bu
             return state;
     }
 };
+
+export const PageReducer: Reducer<string> = (state: string = initialState.currentPage, action: ActionTypes) => {
+    switch (action.type) {
+        case keys.CHANGE_PAGE:
+            return action.currentPage;
+        default:
+            return state;
+    }
+};

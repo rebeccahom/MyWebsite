@@ -1,13 +1,16 @@
 import * as React from 'react';
 import '../../../Styles/About.css';
+import Education from '../Education';
 
 export interface IAboutMainStateProps {
     isShowingBubbles: boolean;
+    currentPage: string;
 }
 
 export interface IAboutMainDispatchProps {
     showBubbles: () => void;
     hideBubbles: () => void;
+    changePage: (page: string) => void;
 }
 
 export type IAboutMainProps = IAboutMainStateProps & IAboutMainDispatchProps;
@@ -20,26 +23,87 @@ class AboutMain extends React.Component<IAboutMainProps> {
         return (
             <div>
                 <div className='flex'>
-                    <div className='circle bounceAnimation' style={{backgroundColor: "#f48a78"}}>
+                    <div className='circle' style={{backgroundColor: "#f48a78"}}
+                        onClick={() => {this.props.hideBubbles(); this.props.changePage("Education"); }}>
                         <p className='centerCircleLabel'>EDUCATION</p></div>
-                    <div className='circle bounceAnimation' style={{backgroundColor: "#eda277"}}>
+                    <div className='circle' style={{backgroundColor: "#eda277"}}>
                         <p className='centerCircleLabel'>LANGUAGES</p></div>
-                    <div className='circle bounceAnimation' style={{backgroundColor: "#f6c98a"}}>
+                    <div className='circle' style={{backgroundColor: "#f6c98a"}}>
                         <p className='centerCircleLabel'>IDEs</p></div>
                 </div>
                 <div className='flex'>
-                    <div className='circle bounceAnimation' style={{backgroundColor: "#e1d99c"}}>
+                    <div className='circle' style={{backgroundColor: "#e1d99c"}}>
                         <p className='centerCircleLabel'>OTHER</p></div>
-                    <div className='circle bounceAnimation' style={{backgroundColor: "#bfead3"}}>
+                    <div className='circle' style={{backgroundColor: "#bfead3"}}>
                         <p className='centerCircleLabel'>HOBBIES</p></div>
                 </div>
             </div>);
     }
 
+    generateTabs() {
+        return (
+            <div id="tabStyle">
+                <ul id="tabs">
+                    <li onClick={() => this.props.changePage("Education")}>Education</li>
+                    <li>Languages</li>
+                    <li>IDEs</li>
+                    <li>Other</li>
+                    <li>Hobbies</li>
+                </ul>
+            </div>
+        );
+    }
+
+    generateContent() {
+        if (this.props.currentPage === "Education") {
+            return (
+                <div>
+                    {this.generateTabs()}
+                    <Education />
+                </div>
+            );
+        } else {
+            return (
+                <div>
+                    {this.generateTabs()}
+                </div>
+            );
+        }
+        /*else if (this.props.currentPage === "Languages") {
+            return (
+                <div>
+                    {this.generateTabs()}
+                    <Languages />
+                </div>
+            );
+        } else if (this.props.currentPage === "IDEs") {
+            return (
+                <div>
+                    {this.generateTabs()}
+                    <IDEs />
+                </div>
+            );
+        } else if (this.props.currentPage === "Other") {
+            return (
+                <div>
+                    {this.generateTabs()}
+                    <Other />
+                </div>
+            );
+        } else if (this.props.currentPage === "Hobbies") {
+            return (
+                <div>
+                    {this.generateTabs()}
+                    <Hobbies />
+                </div>
+            );
+        }*/
+    }
+
     render() {
         return (
-            <div id='showCircles'>
-                {this.props.isShowingBubbles ? this.generateBubbles() : <div/>}
+            <div id='aboutStyle'>
+                {this.props.isShowingBubbles ? this.generateBubbles() : this.generateContent()}
             </div>
         );
     }

@@ -9,6 +9,11 @@ interface IHideBubbles {
     type: keys.HIDE_BUBBLES;
 }
 
+interface IChangePage {
+    type: keys.CHANGE_PAGE;
+    currentPage: string;
+}
+
 //Action creator
 export function showBubbles(): IShowBubbles {
     return {
@@ -22,6 +27,14 @@ export function hideBubbles(): IHideBubbles {
     };
 }
 
+export function changePage(page: string): IChangePage {
+    return {
+        currentPage: page,
+        type: keys.CHANGE_PAGE
+    };
+}
+
 export type AboutActionTypes =
     IShowBubbles
-    | IHideBubbles;
+    | IHideBubbles
+    | IChangePage;
