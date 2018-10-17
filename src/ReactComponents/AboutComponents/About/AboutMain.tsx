@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '../../../Styles/About.css';
 import Education from '../Education';
+import Languages from '../Languages';
 
 export interface IAboutMainStateProps {
     isShowingBubbles: boolean;
@@ -45,7 +46,7 @@ class AboutMain extends React.Component<IAboutMainProps> {
             <div id="tabStyle">
                 <ul id="tabs">
                     <li onClick={() => this.props.changePage("Education")}>Education</li>
-                    <li>Languages</li>
+                    <li onClick={() => this.props.changePage("Languages")}>Languages</li>
                     <li>IDEs</li>
                     <li>Other</li>
                     <li>Hobbies</li>
@@ -62,6 +63,13 @@ class AboutMain extends React.Component<IAboutMainProps> {
                     <Education />
                 </div>
             );
+        } else if (this.props.currentPage === "Languages") {
+            return (
+                <div>
+                    {this.generateTabs()}
+                    <Languages />
+                </div>
+            );
         } else {
             return (
                 <div>
@@ -69,14 +77,7 @@ class AboutMain extends React.Component<IAboutMainProps> {
                 </div>
             );
         }
-        /*else if (this.props.currentPage === "Languages") {
-            return (
-                <div>
-                    {this.generateTabs()}
-                    <Languages />
-                </div>
-            );
-        } else if (this.props.currentPage === "IDEs") {
+         /*else if (this.props.currentPage === "IDEs") {
             return (
                 <div>
                     {this.generateTabs()}
@@ -103,7 +104,7 @@ class AboutMain extends React.Component<IAboutMainProps> {
     render() {
         return (
             <div id='aboutStyle'>
-                {this.props.isShowingBubbles ? this.generateBubbles() : this.generateContent()}
+                {this.props.isShowingBubbles ? this.generateContent() : <div/>}
             </div>
         );
     }

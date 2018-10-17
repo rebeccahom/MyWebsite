@@ -49,6 +49,7 @@
     margin-top: 3%;
     width: 100%;
 }
+
 #tabs {
     width: 50%;
     margin: auto;
@@ -60,8 +61,7 @@
 #tabs li {
     float: left;
     padding: 2% 5% 2% 4%;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
     width: 10%;
 }
 #tabs li:hover{
@@ -80,13 +80,21 @@
     background-color: #3b493e;
     color: white;
 }
-/*---------------EDUCATION---------------*/
-#Education {
-    margin-top: 10%;
-    padding: 2% 10% 2% 10%;
+
+.currentTab {
+    border-bottom: 3px solid #89ff9d;
 }
 
-.captionFix {
-    float: left;
-    margin-right: 4%;
+/*---------------EDUCATION---------------*/
+#Education {
+    padding-top: 5%;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10%;
+}
+
+#Education p, ul {
+    text-align: left;
 }
