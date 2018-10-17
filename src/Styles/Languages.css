@@ -7,9 +7,10 @@
     margin-bottom: 10%;
 }
 
-#proficientBox {
+.toolbox {
     margin: auto;
     display: grid;
+    margin-bottom: 20%;
 }
 
 .rows {
